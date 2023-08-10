@@ -1,6 +1,7 @@
-package com.digit;
+package com.digit.ConstructorInjuction1;
 
 import org.springframework.beans.factory.xml.XmlBeanFactory;
+//import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 
@@ -19,6 +20,10 @@ public class MainApp {
 		System.out.println("----------");
 		Employee emp4 = (Employee)beanFactory.getBean("bean4");
 		emp4.getData();
+		
+//		ClassPathXmlApplicationContext cxml = new ClassPathXmlApplicationContext("applicationContext.xml");
+//		Employee emp1 = (Employee)cxml.getBean("bean1");
+//		emp1.getData();
 	}
 
 }

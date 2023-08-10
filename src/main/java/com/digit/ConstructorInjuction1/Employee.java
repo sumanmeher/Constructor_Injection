@@ -1,4 +1,4 @@
-package com.digit;
+package com.digit.ConstructorInjuction1;
 
 public class Employee {
 	int id;
