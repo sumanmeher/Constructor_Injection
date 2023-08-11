@@ -93,6 +93,11 @@
 	</bean>
 
 
+
+
+
+
+
 	<bean id="emp-1"
 		class="com.digit.ConstructorInjuction5.EmployeeDetails">
 		<constructor-arg value="1" type="int"></constructor-arg>
@@ -148,5 +153,36 @@
 
 
 
+
+	<bean id="ques" class="com.digit.ConstructorInjuction7.Question">
+
+		<constructor-arg value="1"></constructor-arg>
+		<constructor-arg value="What is the capital of India?"></constructor-arg>
+		<constructor-arg>
+			<map>
+				<entry key-ref="user1" value-ref="ans1"></entry>
+				<entry key-ref="user2" value-ref="ans2"></entry>
+				
+			</map>
+		</constructor-arg>
+	</bean>
+	<bean id="user1" class="com.digit.ConstructorInjuction7.User">
+		<constructor-arg value="1" type="int"></constructor-arg>
+		<constructor-arg value="User1"></constructor-arg>
+	</bean>
+	<bean id="user2" class="com.digit.ConstructorInjuction7.User">
+		<constructor-arg value="2" type="int"></constructor-arg>
+		<constructor-arg value="User2"></constructor-arg>
+	</bean>
+
+	<bean id="ans1" class="com.digit.ConstructorInjuction7.Answers">
+		<constructor-arg value="1" type="int"></constructor-arg>
+		<constructor-arg value="Gujrat"></constructor-arg>
+	</bean>
+
+	<bean id="ans2" class="com.digit.ConstructorInjuction7.Answers">
+		<constructor-arg value="2" type="int"></constructor-arg>
+		<constructor-arg value="Delhi"></constructor-arg>
+	</bean>
 
 </beans>
